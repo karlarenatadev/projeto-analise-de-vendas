@@ -52,7 +52,7 @@ Para executar esta análise em seu ambiente local, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    [git clone [(https://github.com/karlarenatadev/projeto-analise-de-vendas.git)]https://github.com/karlarenatadev/projeto-analise-de-vendas.git
     ```
 
 2.  **Instale as dependências:**
