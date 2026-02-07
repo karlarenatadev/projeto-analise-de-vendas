@@ -60,6 +60,4 @@ Para facilitar a interpretação dos dados, foram gerados:
     jupyter notebook
     ```
     Abra o arquivo `analise-de-vendas.ipynb` e execute as células para visualizar a análise.
-    jupyter notebook
-    ```
-    Abra o arquivo `analise-de-vendas.ipynb` e execute as células para visualizar a análise.
+
