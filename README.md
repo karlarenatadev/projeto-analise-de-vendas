@@ -1,64 +1,65 @@
-# 📊 Análise de Vendas de Loja
+# 📊 Sales Insight: Análise Exploratória de Vendas (EDA)
 
-Este projeto é uma análise exploratória de dados (EDA) de um conjunto de dados de vendas de uma loja. O objetivo principal é identificar padrões de compra, entender o comportamento dos clientes e extrair insights que possam guiar decisões estratégicas de negócio.
+Este repositório contém uma análise detalhada de um conjunto de dados de vendas no varejo. O projeto utiliza técnicas de **Exploratory Data Analysis (EDA)** para transformar dados brutos em inteligência de negócio, identificando gargalos, oportunidades de crescimento e comportamentos sazonais.
 
-## 🎯 Questões de Negócio Analisadas
+## 🎯 Objetivos da Análise
 
-A análise foi conduzida para responder às seguintes perguntas:
+A análise foi estruturada para responder a pilares estratégicos:
 
-1.  **Análise de Produtos:**
-    * Quais são os produtos mais vendidos em termos de quantidade?
-    * Quais produtos e subcategorias geram o maior faturamento?
-    * Qual a relação entre o volume de vendas e a receita gerada?
-
-2.  **Análise de Clientes:**
-    * Qual é o segmento de cliente mais valioso para a loja?
-    * De quais estados e regiões vêm as maiores vendas?
-
-3.  **Análise Sazonal:**
-    * Existe alguma sazonalidade nas vendas ao longo do ano?
-    * Como essa sazonalidade se comporta para as diferentes categorias de produtos?
+1.  **Performance de Produtos:** Identificação de "produtos de tráfego" (alto volume) vs. "produtos de valor" (alto faturamento).
+2.  **Inteligência Geográfica & Segmentação:** Mapeamento de regiões críticas e perfis de clientes mais rentáveis.
+3.  **Sazonalidade:** Identificação de tendências temporais para otimização de estoque e campanhas de marketing.
 
 ## 🚀 Principais Descobertas e Insights
 
-Com base na análise, foram extraídos os seguintes insights estratégicos:
+Os dados revelaram padrões fundamentais para a tomada de decisão:
 
-* **Volume vs. Faturamento:** A categoria **"Material de Escritório"** domina em volume de vendas, atuando como um forte "produto de tráfego". No entanto, a subcategoria **"Móveis"** (especificamente mesas) lidera em faturamento, sendo um "produto de valor".
-* **Perfil do Cliente:** O segmento **"Consumer" (Consumidor Final)** é o mais lucrativo, representando a maior fatia da receita.
-* **Foco Geográfico:** As vendas estão fortemente concentradas nos estados da **Califórnia** e **Nova Iorque**, indicando mercados-chave para a empresa.
-* **Padrões Sazonais:** As vendas atingem picos nos meses de **setembro, novembro e dezembro**. A análise cruzada revelou que "Tecnologia" e "Móveis" impulsionam as vendas no final do ano, enquanto "Material de Escritório" possui uma demanda mais constante.
+* **Estratégia de Categoria:** A categoria de **Material de Escritório** é o principal motor de volume, enquanto a subcategoria de **Mesas (Furniture)** é a que mais agrega faturamento individual.
+* **Segmento Dominante:** O segmento **Consumer (B2C)** lidera o consumo, representando a maior fatia da receita total.
+* **Potencial Geográfico:** As vendas possuem forte concentração nos estados da **Califórnia** e **Nova Iorque**, sugerindo a necessidade de reforçar a logística ou marketing nessas regiões.
+* **Ciclos de Vendas:** Há um crescimento acentuado no último trimestre (**setembro a dezembro**). O cruzamento de dados mostra que Tecnologia e Móveis impulsionam as vendas de final de ano, enquanto Materiais de Escritório mantêm uma receita estável.
 
-## 🛠️ Ferramentas e Metodologia
+## 🛠️ Tecnologias e Ferramentas
 
-* **Linguagem:** Python 3
-* **Bibliotecas:**
-    * `pandas` para manipulação e análise dos dados.
-    * `matplotlib` e `seaborn` для criação das visualizações.
-* **Ambiente:** Jupyter Notebook (`analise-de-vendas.ipynb`)
+O projeto foi desenvolvido utilizando o ecossistema de Data Science do Python:
 
-A análise seguiu um processo estruturado de limpeza de dados, seguido por análises descritivas e cruzamento de variáveis para aprofundar os insights.
+* **Linguagem:** Python 3.x
+* **Manipulação de Dados:** `Pandas`
+* **Visualização de Dados:** `Matplotlib` e `Seaborn`
+* **Ambiente de Desenvolvimento:** `Jupyter Notebook`
 
-## 📈 Visualizações Geradas
+## 📉 Visualizações Destacadas
 
-O projeto inclui diversos gráficos para ilustrar as descobertas, tais como:
-* Gráficos de barras para faturamento por subcategoria, segmento e estado.
-* Gráfico de linhas para análise de sazonalidade.
-* Gráfico de barras empilhadas para faturamento por estado e categoria.
-* Mapa de calor (heatmap) para cruzar faturamento entre segmento e categoria.
+Para facilitar a interpretação dos dados, foram gerados:
+* **Gráficos de Barras:** Comparação de faturamento por subcategoria, segmento e estado.
+* **Gráficos de Linha:** Evolução mensal das vendas para análise de sazonalidade.
+* **Heatmaps:** Cruzamento matricial entre Segmento de Cliente e Categoria de Produto.
+* **Barras Empilhadas:** Distribuição de categorias de produtos por estado.
 
-## 📋 Como Utilizar o Projeto
+## 📂 Estrutura do Projeto
 
-Para executar esta análise em seu ambiente local, siga os passos abaixo:
+* `train.csv`: Conjunto de dados brutos contendo o histórico de vendas.
+* `analise-de-vendas.ipynb`: Notebook contendo todo o código de limpeza, tratamento e visualização.
+* `README.md`: Documentação do projeto.
+
+## 📋 Como Executar
 
 1.  **Clone o repositório:**
     ```bash
-    [git clone [(https://github.com/karlarenatadev/projeto-analise-de-vendas.git)]https://github.com/karlarenatadev/projeto-analise-de-vendas.git
+    git clone [https://github.com/karlarenatadev/projeto-analise-de-vendas.git](https://github.com/karlarenatadev/projeto-analise-de-vendas.git)
+    cd projeto-analise-de-vendas
     ```
 
-2.  **Instale as dependências:**
+2.  **Instale as dependências necessárias:**
     ```bash
     pip install pandas matplotlib seaborn jupyter
     ```
 
-3.  **Execute o Jupyter Notebook:**
-    Abra o arquivo `analise-de-vendas.ipynb` em seu ambiente Jupyter e execute as células.
+3.  **Inicie o ambiente:**
+    ```bash
+    jupyter notebook
+    ```
+    Abra o arquivo `analise-de-vendas.ipynb` e execute as células para visualizar a análise.
+    jupyter notebook
+    ```
+    Abra o arquivo `analise-de-vendas.ipynb` e execute as células para visualizar a análise.
